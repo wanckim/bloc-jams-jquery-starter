@@ -35,6 +35,7 @@ $(document).ready( function() {
     const percent = (currentTime / duration) * 100;
     $('#time-control .current-time').text( currentTime );
     $('#time-control input').val(percent);
+    $('#time-control .total-time').text ( duration );
   }, 1000);
 
   $('#volume-control input').on('input', (event) => {
